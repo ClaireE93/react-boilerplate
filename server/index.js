@@ -2,8 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 
-app.use(morgan('dev'));
-app.use(express.static(__dirname + './../client'));
+app.use(express.static(__dirname + './../public'));
 app.use(bodyParser.json());
 
 const port = 3000;
